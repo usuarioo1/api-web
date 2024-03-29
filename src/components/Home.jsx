@@ -2,6 +2,7 @@ import React from 'react'
 import Acordion from './home/Acordion'
 import Hero from './home/Hero'
 import Code from './home/Code'
+import Code2 from './home/Code2'
 
 
 const Home = () => {
@@ -49,12 +50,17 @@ const Home = () => {
 
             <Acordion />
 
-            <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 text-center">
-                <div className="mb-4">
-                    <h2 className="text-3xl font-bold">¿Cómo se ve una llamada a una API?</h2>
+            <div class="bg-white shadow-md px-8 pt-6 pb-8 mb-4 text-center w-80 mx-auto rounded-3xl mt-5">
+                <div class="mb-4 mt-8">
+                    <h2 class="text-3xl font-bold">¿Cómo se ve una llamada a una API?</h2>
                 </div>
                 
             </div>
+
+            <Code2 />
+
+
+
             <Code />
         </div>
     )
