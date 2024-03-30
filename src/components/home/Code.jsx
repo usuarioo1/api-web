@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Code = () => {
-    const codigo = `
+  const codigo = `
     const tipoIndicador = 'dolar';
     const apiUrl = \`https://mindicador.cl/api/\${tipoIndicador}\`;
 
@@ -16,13 +16,16 @@ const Code = () => {
       });
   `;
 
-    return (
-        <div className="mockup-code">
-            <pre>
-                <code dangerouslySetInnerHTML={{ __html: codigo }} />
-            </pre>
-        </div>
-    );
+  return (
+    <div className='w-full sm:w-2/4 flex items-center justify-center mx-auto my-auto'>
+      <div className="mockup-code">
+        <pre>
+          <code dangerouslySetInnerHTML={{ __html: codigo }} />
+        </pre>
+      </div>
+    </div>
+
+  );
 };
 
 export default Code;
