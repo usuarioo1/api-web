@@ -1,11 +1,12 @@
 'use client'
 import React, { useState, useEffect } from 'react';
+import 'dotenv/config'
 
 const Cat = () => {
   const [catImages, setCatImages] = useState([]);
 
   useEffect(() => {
-    fetch('https://api.thecatapi.com/v1/images/search?limit=10&breed_ids=beng&api_key=live_Rct09RGiwuOXruBNCpYvzO6S4au3sTTAN6vSve9G6cnOAxD4OX0AzkZb1ZR995fW')
+    fetch('https://api.thecatapi.com/v1/images/search?limit=10&breed_ids=beng&api_key=CAT_API_KEY')
       .then(response => response.json())
       .then(data => {
         // Aquí puedes manejar los datos de la respuesta de la API
