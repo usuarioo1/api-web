@@ -6,17 +6,19 @@ const Cat = () => {
   const [catImages, setCatImages] = useState([]);
 
   useEffect(() => {
-    fetch('https://api.thecatapi.com/v1/images/search?limit=10&breed_ids=beng&api_key=CAT_API_KEY')
-      .then(response => response.json())
-      .then(data => {
-        // Aquí puedes manejar los datos de la respuesta de la API
-        const lastThreeImages = data.slice(-3); // Obtener los últimos 3 elementos del array
-        setCatImages(lastThreeImages); // Establecer las imágenes en el estado
-      })
-      .catch(error => {
+    const fetchCatImages = async () => {
+      try {
+        const response = await fetch(`https://api.thecatapi.com/v1/images/search?limit=100&breed_ids=beng&api_key=${process.env.CAT_API_KEY}`);
+        const data = await response.json();
+        const lastThreeImages = data.slice(-3);
+        setCatImages(lastThreeImages);
+      } catch (error) {
         console.error('Error al obtener los datos:', error);
-      });
-  }, []); // 
+      }
+    };
+
+    fetchCatImages();
+  }, []); 
 
   return (
     <div>
