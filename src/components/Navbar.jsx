@@ -10,9 +10,9 @@ const Navbar = () => {
                     <span className="font-semibold text-lg ml-2">API WEB</span>
                 </div>
                 <div className="flex">
-                    <Link href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Que es una API?</Link>
-                    <Link href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Cómo usar una API?</Link>
-                    <Link href="#" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Ejemplos</Link>
+                    <Link href="/" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Que es una API?</Link>
+                    <Link href="#como-usar" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Cómo usar una API?</Link>
+                    <Link href="indicador" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Ejemplos</Link>
                 </div>
             </div>
         </nav>

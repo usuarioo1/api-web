@@ -19,7 +19,7 @@ const Code = () => {
   `;
 
   return (
-    <div>
+    <div id='como-usar'>
       <div className='w-full sm:w-2/4 flex items-center justify-center mx-auto my-auto'>
         <div className="mockup-code">
           <pre>

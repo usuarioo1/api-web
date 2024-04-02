@@ -9,7 +9,7 @@ const Hero = () => {
                     <div className="max-w-md">
                         <h1 className="mb-5 text-5xl font-bold">API WEB</h1>
                         <p className="mb-5">Sitio Web creado con el fin de educar respecto a las API y sus diferentes usos, acá encontraras información desde que es una API, sus aplicaciones más comunes y hasta como construir tu propia API, VAMOS!</p>
-                        <button className="btn btn-primary">Get Started</button>
+                        <button className="btn btn-primary">API WEB</button>
                     </div>
                 </div>
             </div>
